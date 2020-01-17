@@ -151,6 +151,13 @@ context('Paris Grains', () => {
       //cy.get('@Paris-Wheat-Rows').click({ multiple: true })    
       
       cy.get('@Paris-Wheat').find('tfooter').as('Table-Footer')
+      //
+      // Try out within logic
+      //
+      cy.get('@Paris-Wheat').within(() => { 
+        cy.get('tfooter').click()
+      })    
+
       cy.get('@Table-Footer').click()
       
       cy.get('@Table-Footer').should('have.length', 1)
