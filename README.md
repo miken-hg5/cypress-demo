@@ -1,2 +1,2 @@
 # cypress-demo
- Add complete project folder - Cefetra UK tests
+ Add complete project folder - Demo UK tests
