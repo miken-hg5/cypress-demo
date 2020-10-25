@@ -214,8 +214,8 @@ context('Paris Grains', () => {
   //  
   describe('Paris Rapeseed', function() {
     it('Paris Rapeseed', function() {
-      cy.visit('https://cefetra.co.uk//current-market-data/')
-      //cy.contains('PARIS RAPESEED')
+      cy.visit('https://cefetra.co.uk//market-data/')
+      cy.contains('PARIS_RAPESEED')
     })
   })   
 })
